@@ -1,0 +1,30 @@
+package com.baili.pms.mapper;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+
+import com.baili.pms.common.plugin.BaseMapper;
+import com.baili.pms.entity.model.StoreProduct;
+import com.baili.pms.entity.vo.StoreProductConditionVo;
+
+/**
+ * 
+* @ClassName: StoreProductMapper 
+* @Description: TODO(这里用一句话描述这个类的作用) 
+* @author zhumingming 
+* @date 2018年6月4日 下午3:57:35 
+*
+ */
+
+@Mapper
+public interface StoreProductMapper extends BaseMapper<StoreProduct>{
+	/**
+	 * 
+	* @Title: findPageBreakByCondition 
+	* @Description: TODO(根据条件分页查询) 
+	* @return List<StoreProduct>    返回类型
+	 */
+	List<StoreProduct> findPageBreakByCondition(StoreProductConditionVo vo);
+
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baili.account.mapper.PermissionsMapper">
+
+
+	<select id="findPermissionsByRoleId"
+		resultType="com.baili.core.entity.Permissions">
+		SELECT
+		a.*
+		FROM
+		b_permissions a
+		left join role_permissions b on a.id=b.role_id where b.role_id=#{id}
+	</select>
+
+	<delete id="deleteRolePermissionsByPermissionsId" parameterType="Long">
+		delete from role_permissions where permissions_id=#{id}
+	</delete>
+	
+	<select id="findPageBreakByCondition" parameterType="com.baili.account.entity.vo.PermissionsConditionVo" resultType="com.baili.core.entity.Permissions">
+		SELECT
+			*
+		FROM
+			b_permissions
+	</select>
+
+	
+
+
+</mapper>

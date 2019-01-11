@@ -1,0 +1,152 @@
+package com.baili.pms.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+
+import io.swagger.annotations.ApiModelProperty;
+/**
+ * 
+* @ClassName: Merchant 
+* @Description: TODO(这里用一句话描述这个类的作用) 
+* @author zhumingming 
+* @date 2018年6月4日 下午4:07:10 
+*
+ */
+@Entity
+@Table(name = "b_merchant")
+public class Merchant extends BastEntity{
+	/** 
+	* @Fields serialVersionUID : TODO(用一句话描述这个变量表示什么) 
+	*/ 
+	private static final long serialVersionUID = -4889223421845926235L;
+	@ApiModelProperty(value="商户名称")
+	private String merchantName;//商户名称
+	@ApiModelProperty(value="商户简称")
+	private String aliasName;//商户简称
+	@ApiModelProperty(value="省")
+	private String province;//'省'
+	@ApiModelProperty(value="商户所在区域")
+	private String area;//商户所在区域',
+	@ApiModelProperty(value="商户所在街道")
+	private String street;//商户所在街道',
+	@ApiModelProperty(value="商户详细地址")
+	private String address;//商户详细地址',
+	@ApiModelProperty(value="经度'")
+	private String lng;//经度',
+	@ApiModelProperty(value="维度")
+	private String lat;//维度',
+	@ApiModelProperty(value="行业（关联行业表,存数组）")
+	private String industry;// '行业（关联行业表,存数组）',
+	@ApiModelProperty(value="1,游离 2,潜在 3,签约")
+	private Integer status;//1,游离 2,潜在 3,签约',
+	@ApiModelProperty(value="商户负责人")
+	private String director;//商户负责人',
+	@ApiModelProperty(value="负责人电话")
+	private String directorMoble;//'负责人电话',
+	@ApiModelProperty(value="1,开启 2,关闭")
+	private Integer enable;//1,开启 2,关闭',
+	@ApiModelProperty(value="'1,认证完毕 2,等待认证")
+	private Integer flag;//'1,认证完毕 2,等待认证',
+	@ApiModelProperty(value="'一到十越高越高")
+	private Integer type;//'一到十越高越高',
+	public String getMerchantName() {
+		return merchantName;
+	}
+	public void setMerchantName(String merchantName) {
+		this.merchantName = merchantName;
+	}
+
+	public String getAliasName() {
+		return aliasName;
+	}
+	public void setAliasName(String aliasName) {
+		this.aliasName = aliasName;
+	}
+	public String getProvince() {
+		return province;
+	}
+	public void setProvince(String province) {
+		this.province = province;
+	}
+	public String getArea() {
+		return area;
+	}
+	public void setArea(String area) {
+		this.area = area;
+	}
+	public String getStreet() {
+		return street;
+	}
+	public void setStreet(String street) {
+		this.street = street;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getLng() {
+		return lng;
+	}
+	public void setLng(String lng) {
+		this.lng = lng;
+	}
+	public String getLat() {
+		return lat;
+	}
+	public void setLat(String lat) {
+		this.lat = lat;
+	}
+	public String getIndustry() {
+		return industry;
+	}
+	public void setIndustry(String industry) {
+		this.industry = industry;
+	}
+	public Integer getStatus() {
+		return status;
+	}
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
+	public String getDirector() {
+		return director;
+	}
+	public void setDirector(String director) {
+		this.director = director;
+	}
+	public String getDirectorMoble() {
+		return directorMoble;
+	}
+	public void setDirectorMoble(String directorMoble) {
+		this.directorMoble = directorMoble;
+	}
+	public Integer getEnable() {
+		return enable;
+	}
+	public void setEnable(Integer enable) {
+		this.enable = enable;
+	}
+	public Integer getFlag() {
+		return flag;
+	}
+	public void setFlag(Integer flag) {
+		this.flag = flag;
+	}
+	public Integer getType() {
+		return type;
+	}
+	public void setType(Integer type) {
+		this.type = type;
+	}
+	@Override
+	public String toString() {
+		return "Merchant [merchantName=" + merchantName + ", aliasname=" + aliasName + ", province=" + province
+				+ ", area=" + area + ", street=" + street + ", address=" + address + ", lng=" + lng + ", lat=" + lat
+				+ ", industry=" + industry + ", status=" + status + ", director=" + director + ", directorMoble="
+				+ directorMoble + ", enable=" + enable + ", flag=" + flag + ", type=" + type + "]";
+	}
+
+}

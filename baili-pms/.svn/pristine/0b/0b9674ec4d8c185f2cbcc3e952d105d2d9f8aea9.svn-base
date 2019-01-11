@@ -1,0 +1,15 @@
+package com.baili.pms.entity.vo;
+
+import com.baili.core.vo.BaseConditionVo;
+
+/**
+ * 
+* @ClassName: MerchantConditionVo 
+* @Description: TODO(Merchant条件) 
+* @author zhumingming 
+* @date 2018年6月4日 下午4:21:27 
+*
+ */
+public class MerchantConditionVo extends BaseConditionVo{
+
+}

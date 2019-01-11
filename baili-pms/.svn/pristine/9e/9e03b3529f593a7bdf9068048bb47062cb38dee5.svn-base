@@ -1,0 +1,130 @@
+package com.baili.pms.entity;
+
+
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import com.baili.core.entity.BastEntity;
+
+import io.swagger.annotations.ApiModelProperty;
+/**
+ * 
+* @ClassName: Product 
+* @Description: TODO(spu) 
+* @author zhumingming 
+* @date 2018年5月31日 下午3:19:29 
+*
+ */
+@Entity
+@Table(name = "b_product")
+public class Product extends BastEntity{
+	/** 
+	* @Fields serialVersionUID : TODO(用一句话描述这个变量表示什么) 
+	*/ 
+	private static final long serialVersionUID = 5039488166579008429L;
+	
+	private String spu;
+	
+	@ApiModelProperty(value="商品名称")
+	private String productName; //商品名称
+	
+	private Long categoryId;//分类id
+	
+	private Category category;//
+	
+	private String subtitle;//小标题
+	
+	private String imagesList;//图片列表{}
+	
+	private String detail;//详情
+	
+	private String status;//状态
+	
+	private List<ProductSpecs> productSpecsList;//规格
+
+	
+	
+	public String getSpu() {
+		return spu;
+	}
+
+	public void setSpu(String spu) {
+		this.spu = spu;
+	}
+
+	public String getProductName() {
+		return productName;
+	}
+
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+
+	public Long getCategoryId() {
+		return categoryId;
+	}
+
+	public void setCategoryId(Long categoryId) {
+		this.categoryId = categoryId;
+	}
+
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+
+	public String getSubtitle() {
+		return subtitle;
+	}
+
+	public void setSubtitle(String subtitle) {
+		this.subtitle = subtitle;
+	}
+
+	public String getImagesList() {
+		return imagesList;
+	}
+
+	public void setImagesList(String imagesList) {
+		this.imagesList = imagesList;
+	}
+
+	public String getDetail() {
+		return detail;
+	}
+
+	public void setDetail(String detail) {
+		this.detail = detail;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public List<ProductSpecs> getProductSpecsList() {
+		return productSpecsList;
+	}
+
+	public void setProductSpecsList(List<ProductSpecs> productSpecsList) {
+		this.productSpecsList = productSpecsList;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

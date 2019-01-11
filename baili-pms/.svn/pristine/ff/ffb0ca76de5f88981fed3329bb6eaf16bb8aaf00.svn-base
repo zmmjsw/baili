@@ -1,0 +1,137 @@
+package com.baili.pms.entity.model;
+
+import java.math.BigDecimal;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import io.swagger.annotations.ApiModelProperty;
+/**
+ * 
+* @ClassName: StoreProduct 
+* @Description: TODO(这里用一句话描述这个类的作用) 
+* @author zhumingming 
+* @date 2018年5月31日 下午3:19:22 
+*
+ */
+@Entity
+@Table(name = "b_store_product")
+public class StoreProduct extends BastEntity{
+
+	/** 
+	* @Fields serialVersionUID : TODO(用一句话描述这个变量表示什么) 
+	*/ 
+	private static final long serialVersionUID = 7135743160282487545L;
+	@ApiModelProperty(value="商户表id")
+	private Long merchantId;//商户表id
+	@ApiModelProperty(value="店铺id'")
+	private Long shopId;//店铺id',
+	@ApiModelProperty(value="商品表id")
+	private Long productId;//商品表id',
+	@ApiModelProperty(value="商品商户视频")
+	private String skuvideo;//'商品商户视频',
+	@ApiModelProperty(value="商品商户个体照片")
+	private String skuimg;//商品商户个体照片',
+	@ApiModelProperty(value="商品商户说明")
+	private String skucontent;//'商品商户说明',
+	@ApiModelProperty(value="商品价格(精准到分)")
+	private BigDecimal price;//商品价格(精准到分)',
+	@ApiModelProperty(value="打折百分比")
+	private BigDecimal discount;//打折百分比',
+	@ApiModelProperty(value="商品编码")
+	private String sku;//'商品编码',
+	@ApiModelProperty(value="商品库存")
+	private Integer stock;//商品库存',
+	@ApiModelProperty(value="1,开启 2,暂停 3 ,下架")
+	private Integer eable;//1,开启 2,暂停 3 ,下架 ',
+	@ApiModelProperty(value="1,物流配送  2,商家自送 3,客户自提（不填默认全部支持）")
+	private Integer type;//1,物流配送  2,商家自送 3,客户自提（不填默认全部支持）'
+	@ApiModelProperty(value="备注说明")
+	private String remark;//'备注说明',
+	public Long getMerchantId() {
+		return merchantId;
+	}
+	public void setMerchantId(Long merchantId) {
+		this.merchantId = merchantId;
+	}
+	public Long getShopId() {
+		return shopId;
+	}
+	public void setShopId(Long shopId) {
+		this.shopId = shopId;
+	}
+	public Long getProductId() {
+		return productId;
+	}
+	public void setProductId(Long productId) {
+		this.productId = productId;
+	}
+	public String getSkuvideo() {
+		return skuvideo;
+	}
+	public void setSkuvideo(String skuvideo) {
+		this.skuvideo = skuvideo;
+	}
+	public String getSkuimg() {
+		return skuimg;
+	}
+	public void setSkuimg(String skuimg) {
+		this.skuimg = skuimg;
+	}
+	public String getSkucontent() {
+		return skucontent;
+	}
+	public void setSkucontent(String skucontent) {
+		this.skucontent = skucontent;
+	}
+	public BigDecimal getPrice() {
+		return price;
+	}
+	public void setPrice(BigDecimal price) {
+		this.price = price;
+	}
+	public BigDecimal getDiscount() {
+		return discount;
+	}
+	public void setDiscount(BigDecimal discount) {
+		this.discount = discount;
+	}
+	public String getSku() {
+		return sku;
+	}
+	public void setSku(String sku) {
+		this.sku = sku;
+	}
+	public Integer getStock() {
+		return stock;
+	}
+	public void setStock(Integer stock) {
+		this.stock = stock;
+	}
+	public Integer getEable() {
+		return eable;
+	}
+	public void setEable(Integer eable) {
+		this.eable = eable;
+	}
+	public Integer getType() {
+		return type;
+	}
+	public void setType(Integer type) {
+		this.type = type;
+	}
+	public String getRemark() {
+		return remark;
+	}
+	public void setRemark(String remark) {
+		this.remark = remark;
+	}
+	@Override
+	public String toString() {
+		return "StoreProduct [merchantId=" + merchantId + ", shopId=" + shopId + ", productId=" + productId
+				+ ", skuvideo=" + skuvideo + ", skuimg=" + skuimg + ", skucontent=" + skucontent + ", price=" + price
+				+ ", discount=" + discount + ", sku=" + sku + ", stock=" + stock + ", eable=" + eable + ", type=" + type
+				+ ", remark=" + remark + "]";
+	}
+
+}

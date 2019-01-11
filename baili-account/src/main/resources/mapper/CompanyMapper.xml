@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baili.account.mapper.CompanyMapper">
+
+
+	
+	<select id="findPageBreakByCondition" parameterType="com.baili.account.entity.vo.CompanyConditionVo" resultType="com.baili.core.entity.Company">
+		SELECT
+			*
+		FROM
+			b_company
+	</select>
+	
+	
+
+
+
+
+
+
+</mapper>

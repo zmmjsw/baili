@@ -1,0 +1,35 @@
+package com.baili.pms.mapper;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+import com.baili.core.common.annotation.CompanyAnnotation;
+import com.baili.core.common.emus.CompanyCode;
+import com.baili.pms.common.plugin.BaseMapper;
+import com.baili.pms.entity.Category;
+import com.baili.pms.entity.vo.CategoryConditionVo;
+
+
+/**
+ * 
+* @ClassName: ProcuctDao 
+* @Description: TODO(商品持久类 mybatis) 
+* @author zhumingming 
+* @date 2018年5月31日 下午1:50:12 
+*
+ */
+
+@Mapper
+public interface CategoryMapper extends BaseMapper<Category>{
+	/**
+	 * 
+	* @Title: findPageBreakByCondition 
+	* @Description: TODO(根据条件分页查询) 
+	* @return List<Product>    返回类型
+	 */
+	@CompanyAnnotation(Alias=CompanyCode.USER)
+	List<Category> findPageBreakByCondition(@Param("vo")CategoryConditionVo vo);
+
+}

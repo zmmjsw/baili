@@ -1,0 +1,60 @@
+package com.baili.pms.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.baili.pms.entity.StoreProduct;
+import com.baili.pms.mapper.StoreProductMapper;
+import com.baili.pms.vo.StoreProductConditionVo;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+
+/**
+ * 
+ * @ClassName: StoreProductService
+ * @Description: TODO(这里用一句话描述这个类的作用)
+ * @author zhumingming
+ * @date 2018年6月4日 下午4:14:21
+ *
+ */
+@Service
+@Transactional
+public class StoreProductService {
+
+	@Autowired
+	private StoreProductMapper storeProductMapper;
+
+	public void addStoreProduct(StoreProduct storeProduct) {
+		storeProductMapper.insertSelective(storeProduct);
+	}
+
+	public void deleteStoreProduct(Long id) {
+		storeProductMapper.deleteByPrimaryKey(id);
+	}
+
+	public void updateStoreProduct(StoreProduct storeProduct) {
+		storeProductMapper.updateByPrimaryKeySelective(storeProduct);
+	}
+
+	public StoreProduct findStoreProductById(Long id) {
+		return storeProductMapper.selectByPrimaryKey(id);
+	}
+
+	/**
+	 * 
+	 * @Title: findStoreProducts
+	 * @Description: TODO(根据条件分页查询)
+	 * @return PageInfo<StoreProduct> 返回类型
+	 */
+	public PageInfo<StoreProduct> findStoreProducts(StoreProductConditionVo vo) {
+		PageHelper.startPage(vo.getPageNumber(), vo.getPageSize());
+		List<StoreProduct> Products = storeProductMapper.findPageBreakByCondition(vo);
+		PageInfo<StoreProduct> bean = new PageInfo<StoreProduct>(Products);
+		bean.setList(Products);
+		return bean;
+	}
+
+}

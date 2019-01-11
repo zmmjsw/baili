@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.baili.account.AppTest" time="0.003" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="F:\zhiyue\baili-parent\baili-account\target\test-classes;F:\zhiyue\baili-parent\baili-account\target\classes;C:\zmmzy\maven\repository\com\baili\baili-core\0.0.1\baili-core-0.0.1.jar;C:\zmmzy\maven\repository\org\springframework\boot\spring-boot-starter-jdbc\2.0.6.RELEASE\spring-boot-starter-jdbc-2.0.6.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\boot\spring-boot-starter\2.0.6.RELEASE\spring-boot-starter-2.0.6.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\boot\spring-boot-starter-logging\2.0.6.RELEASE\spring-boot-starter-logging-2.0.6.RELEASE.jar;C:\zmmzy\maven\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\zmmzy\maven\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\zmmzy\maven\repository\org\apache\logging\log4j\log4j-to-slf4j\2.10.0\log4j-to-slf4j-2.10.0.jar;C:\zmmzy\maven\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;C:\zmmzy\maven\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;C:\zmmzy\maven\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\zmmzy\maven\repository\org\springframework\spring-core\5.0.10.RELEASE\spring-core-5.0.10.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\spring-jcl\5.0.10.RELEASE\spring-jcl-5.0.10.RELEASE.jar;C:\zmmzy\maven\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\zmmzy\maven\repository\com\zaxxer\HikariCP\2.7.9\HikariCP-2.7.9.jar;C:\zmmzy\maven\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\zmmzy\maven\repository\org\springframework\spring-jdbc\5.0.10.RELEASE\spring-jdbc-5.0.10.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\spring-beans\5.0.10.RELEASE\spring-beans-5.0.10.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\spring-tx\5.0.10.RELEASE\spring-tx-5.0.10.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\boot\spring-boot-starter-aop\2.0.6.RELEASE\spring-boot-starter-aop-2.0.6.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\spring-aop\5.0.10.RELEASE\spring-aop-5.0.10.RELEASE.jar;C:\zmmzy\maven\repository\org\aspectj\aspectjweaver\1.8.13\aspectjweaver-1.8.13.jar;C:\zmmzy\maven\repository\org\springframework\boot\spring-boot-devtools\2.0.6.RELEASE\spring-boot-devtools-2.0.6.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\boot\spring-boot\2.0.6.RELEASE\spring-boot-2.0.6.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\spring-context\5.0.10.RELEASE\spring-context-5.0.10.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\spring-expression\5.0.10.RELEASE\spring-expression-5.0.10.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\boot\spring-boot-autoconfigure\2.0.6.RELEASE\spring-boot-autoconfigure-2.0.6.RELEASE.jar;C:\zmmzy\maven\repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar;C:\zmmzy\maven\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="D:\jdknew\work\bin"/>
+    <property name="sun.java.command" value="C:\Users\lixi2000\AppData\Local\Temp\surefire3064266689199705793\surefirebooter1852441117307992098.jar C:\Users\lixi2000\AppData\Local\Temp\surefire3064266689199705793 2018-12-12T14-14-26_847-jvmRun1 surefire1842576532538059465tmp surefire_03785631745818906131tmp"/>
+    <property name="surefire.test.class.path" value="F:\zhiyue\baili-parent\baili-account\target\test-classes;F:\zhiyue\baili-parent\baili-account\target\classes;C:\zmmzy\maven\repository\com\baili\baili-core\0.0.1\baili-core-0.0.1.jar;C:\zmmzy\maven\repository\org\springframework\boot\spring-boot-starter-jdbc\2.0.6.RELEASE\spring-boot-starter-jdbc-2.0.6.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\boot\spring-boot-starter\2.0.6.RELEASE\spring-boot-starter-2.0.6.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\boot\spring-boot-starter-logging\2.0.6.RELEASE\spring-boot-starter-logging-2.0.6.RELEASE.jar;C:\zmmzy\maven\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\zmmzy\maven\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\zmmzy\maven\repository\org\apache\logging\log4j\log4j-to-slf4j\2.10.0\log4j-to-slf4j-2.10.0.jar;C:\zmmzy\maven\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;C:\zmmzy\maven\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;C:\zmmzy\maven\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\zmmzy\maven\repository\org\springframework\spring-core\5.0.10.RELEASE\spring-core-5.0.10.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\spring-jcl\5.0.10.RELEASE\spring-jcl-5.0.10.RELEASE.jar;C:\zmmzy\maven\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\zmmzy\maven\repository\com\zaxxer\HikariCP\2.7.9\HikariCP-2.7.9.jar;C:\zmmzy\maven\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\zmmzy\maven\repository\org\springframework\spring-jdbc\5.0.10.RELEASE\spring-jdbc-5.0.10.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\spring-beans\5.0.10.RELEASE\spring-beans-5.0.10.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\spring-tx\5.0.10.RELEASE\spring-tx-5.0.10.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\boot\spring-boot-starter-aop\2.0.6.RELEASE\spring-boot-starter-aop-2.0.6.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\spring-aop\5.0.10.RELEASE\spring-aop-5.0.10.RELEASE.jar;C:\zmmzy\maven\repository\org\aspectj\aspectjweaver\1.8.13\aspectjweaver-1.8.13.jar;C:\zmmzy\maven\repository\org\springframework\boot\spring-boot-devtools\2.0.6.RELEASE\spring-boot-devtools-2.0.6.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\boot\spring-boot\2.0.6.RELEASE\spring-boot-2.0.6.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\spring-context\5.0.10.RELEASE\spring-context-5.0.10.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\spring-expression\5.0.10.RELEASE\spring-expression-5.0.10.RELEASE.jar;C:\zmmzy\maven\repository\org\springframework\boot\spring-boot-autoconfigure\2.0.6.RELEASE\spring-boot-autoconfigure-2.0.6.RELEASE.jar;C:\zmmzy\maven\repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar;C:\zmmzy\maven\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\lixi2000"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="D:\jdknew\work"/>
+    <property name="basedir" value="F:\zhiyue\baili-parent\baili-account"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\lixi2000\AppData\Local\Temp\surefire3064266689199705793\surefirebooter1852441117307992098.jar"/>
+    <property name="sun.boot.class.path" value="D:\jdknew\work\lib\resources.jar;D:\jdknew\work\lib\rt.jar;D:\jdknew\work\lib\sunrsasign.jar;D:\jdknew\work\lib\jsse.jar;D:\jdknew\work\lib\jce.jar;D:\jdknew\work\lib\charsets.jar;D:\jdknew\work\lib\jfr.jar;D:\jdknew\work\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_171-b11"/>
+    <property name="user.name" value="wangxiaosan"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="D:\jdknew\work\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\zmmzy\maven\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\lixi2000\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_171"/>
+    <property name="user.dir" value="F:\zhiyue\baili-parent\baili-account"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="D:\jdknew\work\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/jdknew/work/bin/server;D:/jdknew/work/bin;D:/jdknew/work/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;D:\setup\curl-7.40.0-ssl-sspi-zlib-static-bin-w32;C:\zmmzy\maven\apache-maven-3.5.2\bin;D:\program\jdk1.8.0_20\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Acer\abFiles\;C:\Program Files (x86)\nodejs;D:\study\tortoisegit\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;%CATALINA_HOME%\common\lib\servlet.jar;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files (x86)\Tesseract-OCR;C:\Users\lixi2000\AppData\Local\Programs\Python\Python36-32;F:\zmm\nodejs\;;C:\WINDOWS\System32\OpenSSH\;F:\zmm\fiddel\Fiddler;C:\Users\lixi2000\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;C:\zmmzy\eclipsejavaee\eclipse;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.171-b11"/>
+    <property name="java.ext.dirs" value="D:\jdknew\work\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testApp" classname="com.baili.account.AppTest" time="0.001"/>
+</testsuite>

@@ -1,0 +1,87 @@
+package com.baili.pms.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.baili.pms.entity.model.Merchant;
+import com.baili.pms.entity.vo.MerchantConditionVo;
+import com.baili.pms.mapper.MerchantMapper;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+/**
+ * 
+* @ClassName: MerchantService 
+* @Description: TODO(这里用一句话描述这个类的作用) 
+* @author zhumingming 
+* @date 2018年6月4日 下午4:13:41 
+*
+ */
+@Service
+@Transactional
+public class MerchantService {
+
+
+	@Autowired
+	private MerchantMapper merchantMapper;
+
+	/**
+	 * 
+	* @Title: addMerchant 
+	* @Description: TODO(添加merchant) 
+	* @return void    返回类型
+	 */
+	public void addMerchant(Merchant merchant) {
+		merchantMapper.insert(merchant);
+
+	}
+
+	/**
+	 * 
+	* @Title: deleteMerchant 
+	* @Description: TODO(根据ID删除merchant) 
+	* @return void    返回类型
+	 */
+	public void deleteMerchant(Long id) {
+		merchantMapper.deleteByPrimaryKey( id);
+	}
+
+	/**
+	 * 
+	* @Title: updateMerchant 
+	* @Description: TODO(根据id修改merchant) 
+	* @return void    返回类型
+	 */
+	public void updateMerchant(Merchant merchant) {
+		merchantMapper.updateByPrimaryKey(merchant);
+	}
+
+	/**
+	 * 
+	* @Title: findMerchantById 
+	* @Description: TODO(根据id查找单个Merchant) 
+	* @return Merchant    返回类型
+	 */
+	public Merchant findMerchantById(Long id) {
+		return merchantMapper.selectByPrimaryKey(id);
+
+	}
+
+	/**
+	 * 
+	* @Title: findMerchants 
+	* @Description: TODO(根据条件分页查询) 
+	* @return PageInfo<Merchant>    返回类型
+	 */
+	public PageInfo<Merchant> findMerchants(MerchantConditionVo cond) {
+		PageHelper.startPage(cond.getPageNumber(), cond.getPageSize());
+		List<Merchant> allItems = merchantMapper.findPageBreakByCondition(cond);
+		PageInfo<Merchant> bean = new PageInfo<Merchant>(allItems);
+		bean.setList(allItems);
+		return bean;
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.baili.core.util;
+
+import java.util.Collection;
+
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
+
+public class RedisShiroUtil {
+	
+	public void getUserName() {
+		Subject subject = SecurityUtils.getSubject();
+		Collection<Object> attributeKeys = subject.getSession().getAttributeKeys();
+		System.out.println(attributeKeys.toString());
+		Object attribute = subject.getSession().getAttribute("userSession");
+		Object attribute1 = subject.getSession().getAttribute("userSessionId");
+		System.out.println(attribute);
+	}
+
+}

@@ -1,0 +1,101 @@
+package com.baili.core.entity;
+
+import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
+
+import io.swagger.annotations.ApiModelProperty;
+
+/**
+ * 
+ * @ClassName: Role
+ * @Description: TODO(角色表)
+ * @author zhumingming
+ * @date 2018年11月23日 下午3:09:20
+ *
+ */
+@Entity
+@Table(name = "b_role")
+public class Role extends BastEntity {
+
+	/**
+	 * @Fields serialVersionUID : TODO(用一句话描述这个变量表示什么)
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@ApiModelProperty(value = "角色名称")
+	private String name;// 角色名称
+
+	@ApiModelProperty(value = "角色权限")
+	private String role;// 角色权限
+
+	@ApiModelProperty(value = "父Id")
+	private Long parentId;// 父编号
+
+	@ApiModelProperty(value = "资源权限列表")
+	@ManyToMany
+	@JoinTable(name = "role_permissions", joinColumns = @JoinColumn(name = "role_id"), inverseJoinColumns = @JoinColumn(name = "permissions_id"))
+	private List<Permissions> permissions;// 权限列表
+
+	@ApiModelProperty(value = "资源权限列表")
+	@ManyToMany
+	@JoinTable(name = "role_authority", joinColumns = @JoinColumn(name = "role_id"), inverseJoinColumns = @JoinColumn(name = "authority_id"))
+	private List<Authority> authoritys;// 权限列表
+
+	@ApiModelProperty(value = "用户列表")
+	@ManyToMany
+	@JoinTable(name = "user_role", joinColumns = { @JoinColumn(name = "role_id") }, inverseJoinColumns = { @JoinColumn(name = "user_id") })
+	private List<User> user;// 用户
+
+	public List<Authority> getAuthoritys() {
+		return authoritys;
+	}
+
+	public void setAuthoritys(List<Authority> authoritys) {
+		this.authoritys = authoritys;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public List<User> getUser() {
+		return user;
+	}
+
+	public void setUser(List<User> user) {
+		this.user = user;
+	}
+
+	public List<Permissions> getPermissions() {
+		return permissions;
+	}
+
+	public void setPermissions(List<Permissions> permissions) {
+		this.permissions = permissions;
+	}
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
+	public Long getParentId() {
+		return parentId;
+	}
+
+	public void setParentId(Long parentId) {
+		this.parentId = parentId;
+	}
+
+}

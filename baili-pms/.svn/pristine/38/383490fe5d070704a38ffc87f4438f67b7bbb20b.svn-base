@@ -1,0 +1,29 @@
+package com.baili.pms.mapper;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+
+import com.baili.pms.common.plugin.BaseMapper;
+import com.baili.pms.entity.model.Merchant;
+import com.baili.pms.entity.vo.MerchantConditionVo;
+/**
+ * 
+* @ClassName: MerchantMapper 
+* @Description: TODO(这里用一句话描述这个类的作用) 
+* @author zhumingming 
+* @date 2018年6月4日 下午3:02:05 
+*
+ */
+
+@Mapper
+public interface MerchantMapper extends BaseMapper<Merchant>{
+	/**
+	 * 
+	* @Title: findPageBreakByCondition 
+	* @Description: TODO(根据条件分页查询) 
+	* @return List<Merchant>    返回类型
+	 */
+	List<Merchant> findPageBreakByCondition(MerchantConditionVo vo);
+
+}
